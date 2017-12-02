@@ -4,9 +4,9 @@ import random
 from time import sleep
 
 all_quotes = open('quotes.txt', 'r')
-vocab = all_quotes.read()
-vocab = vocab.split('\n')
-#path = "C:\\Users\\Jitender\\AppData\\Local\\Programs\\Python\\Python36\\assistant\\self script\\alert2.jpg"
+data = all_quotes.read()
+vocab = data.split('\n')
+
 def send_message(title, message):
     app = Qt.QApplication(sys.argv)
     notification_box = Qt.QSystemTrayIcon(Qt.QIcon(':alert2.jpg'), app)
